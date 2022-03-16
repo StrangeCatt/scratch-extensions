@@ -1,6 +1,2 @@
-# scratch-extensions
-My custom scratch extensions
-
-'''
-zerq
-'''
+# 1
+https://strangecatt.github.io/scratch-extensions/1.js
