@@ -14,7 +14,7 @@ class Fetch {
               defaultValue: 'https://extensions.turbowarp.org/hello.txt'
             }
           }
-        },
+        }
         {
           opcode: 'get2',
           blockType: Scratch.BlockType.REPORTER,
