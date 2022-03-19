@@ -1,4 +1,4 @@
-class Fetch {
+class url {
   getInfo () {
     return {
       id: 'url',
@@ -26,4 +26,4 @@ class Fetch {
   }
 }
 
-Scratch.extensions.register(new Fetch());
+Scratch.extensions.register(new url());
