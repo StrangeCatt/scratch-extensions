@@ -5,38 +5,22 @@ class Fetch {
       name: 'Fetch',
       blocks: [
         {
-          opcode: 'get',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'GET [URL]',
+          {
+          opcode: 'openURL',
+          blockType: Scratch.BlockType.COMMAND,
+          text: 'OPEN URL : [URL]',
           arguments: {
             URL: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'https://extensions.turbowarp.org/hello.txt'
+              defaultValue: 'https://google.com'
             }
-          }
-        },
-        {
-          opcode: 'get2',
-          blockType: Scratch.BlockType.REPORTER,
-          text: 'GET2 [URL]',
-          arguments: {
-            URL: {
-              type: Scratch.ArgumentType.STRING,
-              defaultValue: 'bonjour'
-            }
-          }
         }
       ]
     };
   }
 
-  get (args) {
-    return fetch(args.URL)
-      .then(r => r.text())
-      .catch(() => '');
-  }
-   get2 (args) {
-    return fetch(args.URL)
+  openURL (args) {
+    window.open(args.URL);
       .then(r => r.text())
       .catch(() => '');
   }
