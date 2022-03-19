@@ -1,8 +1,8 @@
 class Fetch {
   getInfo () {
     return {
-      id: 'fetch',
-      name: 'Fetch',
+      id: 'url',
+      name: 'Open URL',
       blocks: [
         {
           {
